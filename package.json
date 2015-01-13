@@ -1,0 +1,21 @@
+{
+  "name": "trecenti.github.io",
+  "version": "0.0.0",
+  "description": "brunotrecenti.com website",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/trecenti/trecenti.github.io"
+  },
+  "author": "Bruno Trecenti",
+  "homepage": "https://github.com/trecenti/trecenti.github.io",
+  "devDependencies": {
+    "metalsmith": "^1.0.1",
+    "metalsmith-sass": "^0.5.0",
+    "metalsmith-beautify": "0.0.7"
+  }
+}
