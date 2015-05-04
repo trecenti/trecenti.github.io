@@ -1,0 +1,89 @@
+
+body > header {
+  padding: 20px 10%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 68%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(68%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,0.7) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,0.7) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,0.7) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,0.7) 100%); /* W3C */
+
+
+  h1 {
+    flex-grow: 1;
+    text-align: left;
+
+    font-size: 36px;
+    a, a:hover, a:visited, a:active {
+      border-bottom: none;
+    }
+  }
+
+  nav {
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      padding: 2px 0;
+      margin-left: 10px;
+    }
+  }
+
+  text-align: center;
+}
+
+body > main {
+  margin: 76px 10%;
+
+  ul {
+    font-size: 28px;
+    li {
+      margin-bottom: 20px;
+      display: flex;
+
+      span {
+        font-style: italic;
+        color: #ccc;
+        min-width: 170px;
+
+      }
+      a {
+        font-weight: bold;
+        font-family: $heading-font;
+
+        &, &:hover, &:visited, &:active {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  article {
+    header {
+      margin-bottom: 2em;
+
+      h1, h2 {
+        line-height: 1.5em;
+        text-align: center;
+      }
+      h2 {
+        font-family: $base-font;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 1em;
+        color: #777;
+      }
+    }
+
+    p {
+      line-height: 1.5em;
+      margin-bottom: 1em;
+    }
+  }
+}

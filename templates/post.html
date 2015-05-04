@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+  <article>
+    <header>
+      <h1>{{ title }}</h1>
+      <h2>{{ date | date('M jS, Y') }}</h2>
+    </header>
+    {{ contents | safe }}
+  </article>
+{% endblock %}

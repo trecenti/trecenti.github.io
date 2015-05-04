@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+  <ul>
+  {% for post in posts %}
+    <li>
+      <span>&nbsp;{{ post.date | date('M jS, Y')}}</span>
+      <a href="/{{ post.path | safe }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+{% endblock %}
