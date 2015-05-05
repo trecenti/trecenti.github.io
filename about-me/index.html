@@ -5,10 +5,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bruno Trecenti - About Me</title>
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/reset.css" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/globals.css" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/layout.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css" />
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -28,69 +26,24 @@
 
 <body>
   <header>
-    <h1>Bruno Trecenti</h1>
-    <h2>
-      <span>bruno.lopestrecenti@gmail.com</span>
-      <span>Porto Alegre, Brazil</span>
-    </h2>
-    <p>I'm a multi-disciplinary, passionate and enthusiast software developer and consultant. I've been involved with software since 2008, worked as trainer helping
-      people learn HTML/CSS and as a consultant developer with a focus on enterprise applications. </p>
+    <h1><a href="/">Bruno Trecenti</a></h1>
+    <nav role="internal"> <a href="/blog">Blog</a> <a href="/about-me">About Me</a> </nav>
+    <nav role="external"> <a href="https://github.com/trecenti" target="_blank"><i class="fa fa-github-alt"></i></a> <a href="https://twitter.com/brunotrecenti" target="_blank"><i class="fa fa-twitter"></i></a>      </nav>
   </header>
   <main>
-    <section>
-      <h2 id="employment">Employment</h2>
-      <div class="content">
-        <h3>July 2010 - Present</h3>
-        <h3>ThoughtWorks</h3>
-        <p>As a software developer and consultant worked on several different projects building and mobile applications for several different customers</p>
-        <h3>February 2012 - Present</h3>
-        <h3>ThoughtWorks - Rackspace Control Panel</h3>
-        <p>Working as a developer with a JavaScript single-page application, building new features that encompass controls for new products Rackspace provides. Technology
-          Stack: Google Closure, Knockout.js, Jasmine, RSpec, Capybara, Django. </p>
-        <h3>September 2012 - February 2013</h3>
-        <h3>ThoughtWorks - Rackspace Classic Control Panel</h3>
-        <p>Worked building features for the Classic Control Panel for Rackspace Products, we were responsible for the feature migrations into the new control panel
-          and as well maitaining the app. The project was built in Java using Struts, Spring, Hibernate and JavaScript. </p>
-        <h3>February 2012 - April 2012</h3>
-        <h3>ThoughtWorks - Largest Publishing Company in South America</h3>
-        <p>Worked as developer and consultant, participated at the very beginning of the project delivering an MVP e-commerce and administrative web application. The
-          technology stack includes a full stack RESTful web application using Ruby on Rails and all the RESTful APIs using Sinatra and Mongodb / Redis as the persistance
-          layer </p>
-      </div>
+    <section role="info">
+      <p> I'm a pragmatic software developer, technical leader and consultant working at <a href="http://www.thoughtworks.com" target="_blank">Thoughtworks</a>. </p>
     </section>
-    <section>
-      <h2 id="education">Education</h2>
-      <div class="content">
-        <h3>Bachelor, Information Systems, Computer Science</h3>
-        <p>Centro Universitário Eurípides de Marília</br> Marilia, SP - Brazil</br> Graduated in 2008</p>
-      </div>
-    </section>
-    <section>
-      <h2 id="professional-skills">Professional Skills</h2>
-      <div class="content">
-        <ul>
-          <h3>Web Development</h3>
-          <li>HTML/CSS</li>
-          <li>Angular</li>
-          <li>Backbone</li>
-          <li>Express JS</li>
-          <li>Ruby on Rails</li>
-          <li>Sinatra</li>
-        </ul>
-        <ul>
-          <h3>Programming Languages</h3>
-          <li>JavaScript</li>
-          <li>Ruby</li>
-          <li>C#</li>
-          <li>Java</li>
-        </ul>
-        <ul>
-          <h3>Data Storage</h3>
-          <li>Mongo DB</li>
-          <li>Redis</li>
-          <li>MySQL</li>
-        </ul>
-      </div>
+    <section role="contact">
+      <p> My e-mail address is <a href="mailto:bruno.lopestrecenti@gmail.com">bruno.lopestrecenti@gmail.com</a>, feel free to contact me. </p>
+      <p> Here's a digital version of my <a href="./resume">resume</a>. </p>
+      <p>And you can find me at:</p>
+      <ul class="medias">
+        <li><a href="https://github.com/trecenti" target="_blank"><i class="fa fa-github-alt"></i>github.com/trecenti</a>
+        </li>
+        <li><a href="https://twitter.com/brunotrecenti" target="_blank"><i class="fa fa-twitter"></i>twitter.com/brunotrecenti</a>
+        </li>
+      </ul>
     </section>
   </main>
 </body>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bruno Trecenti - Continuous deploy, achievement unlocked</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="/stylesheets/main.css" rel="stylesheet" type="text/css" />
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-50847949-1', 'brunotrecenti.com');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1><a href="/">Bruno Trecenti</a></h1>
+    <nav role="internal"> <a href="/blog">Blog</a> <a href="/about-me">About Me</a> </nav>
+    <nav role="external"> <a href="https://github.com/trecenti" target="_blank"><i class="fa fa-github-alt"></i></a> <a href="https://twitter.com/brunotrecenti" target="_blank"><i class="fa fa-twitter"></i></a>      </nav>
+  </header>
+  <main>
+    <article>
+      <header>
+        <h1>Continuous deploy, achievement unlocked</h1>
+        <h2>May 5th, 2014</h2> </header>
+      <p>I&#39;ve been working with the Rackspace Cloud Control Panel team for a while now and one of the things that I&#39;ve learned and I&#39;m proud to have contributed
+        to is how we shaped the continuous deployment pipeline for the project. The whole system may be simple if you overlook it, but in fact is quite complex under
+        the hood, and after all it gives me a exhilarating feeling of achievement on every single deploy.</p>
+      <p>In this post I&#39;ll try to share how it works and the details of each step. To start off, there are several steps before any code gets to production, although
+        it&#39;s a lot, all of them are seamless and simple.</p>
+      <p>We work with branch pull requests, which for me is one of the best methods to work with when you have distributed teams, this process requires a separate post
+        just to dig through it&#39;s details, but for now what matter is that we have branches and a very particular one: the master branch, which is the production
+        ready code, all other branches are either features or miscellaneous code.</p>
+      <p>Our process start when we create a branch with code for a given feature and a pull request for that branch to be merged into master, the code always contains
+        tests, which are part of our development process that uses Karma test runner extensively. Once our code is ready we push them to the remote feature branch,
+        create the pull request and ask our lovely IRC bot to &quot;build that branch&quot; using a command <code>!bb &lt;branch_name&gt;</code>. This will run our
+        fast feedback jobs on our CI, which include lint, unit and integration tests, and will also deploy the last commit SHA for this branch to a node that starts
+        application (we call it branch node) where basic smoke tests will be run, if everything is well it marks the pull request as good to be merged.</p>
+      <p>In order to have this setup, we had to provision branch nodes (currently 10) and a deploy script that selects which node to deploy to, the script will always
+        get the same node if previously used in a given branch, and will try to optimize and pick nodes that have not been changed in a while.</p>
+      <p>When the pull request is reviewed and we got at least one &quot;looks good to me&quot; (LGTM) from the reviewers, we merge it to master and this trigger the
+        same fast feedback jobs on our CI except for the deploy on branch node, instead this SHA is allocated for a future deploy to prod, hold to that info.</p>
+      <p>In the past we were used to deploy to production every single merge into master, we then started using a different way to deploy because of conflicts in the
+        acceptance test runs which could output false positive green build.</p>
+      <p>To solve that we&#39;ve decided to have hourly deploys: every hour a job is triggered collecting the latest commit SHA allocated to be deployed (remember),
+        it would them deploy it to our lower environments (staging, preview, pre-prod) and run our acceptance tests on it, all this is tracked by the lovely IRC
+        bot, which is responsible of notifying people who has changes that are possibly going to production and how the deploy and tests on the lower environments
+        are going, we also have radiators with dashboards to keep track of tests health.</p>
+      <p>Once all tests are done, the lovely IRC bot asks the authors of the current changes if it should proceed and deploy the changes to production, and once everyone
+        agrees by replying this build is good (using the command <code>!good</code>), the bot would trigger the deploy task and once it&#39;s done it notifies everyone
+        about it. During this phase we have ways to prevent a deploy from happening like replying &quot;!bad&quot; to the bot, and we have ways to force a deploy
+        in case the bot fails to ask for a production deploy.</p>
+      <p>So in a nutshell: branch pull request -&gt; build branch checks and reviews -&gt; merge into master -&gt; wait for the next hourly deploy to lower environments
+        -&gt; deploy to production.</p>
+      <p>Reverts also goes through the same flow, and behind the scenes there&#39;s a lot going on, things like: monitoring of all the environments and its nodes health,
+        draining sessions (keep user session alive), off-cycle node deploy first, log metrics and tracking, etc. All this carefully crafted by our teams to provide
+        the best experience for the end user and the developers.</p>
+      <p>Concluding, this process established for this project is for me the perfect example of one item in the agile manifesto &quot;People and interactions over process
+        and tools&quot;, we managed to keep our interactions and the team (even with a bot being part of it) as the most valuable thing while using a process and
+        tools to help us achieve better results.</p>
+      <hr/> </article>
+  </main>
+</body>
+
+</html>
