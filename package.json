@@ -32,6 +32,7 @@
     "marked": "^0.3.2"
   },
   "dependencies": {
-    "metalsmith-drafts": "0.0.1"
+    "metalsmith-drafts": "0.0.1",
+    "gh-pages": "^0.2.0"
   }
 }
