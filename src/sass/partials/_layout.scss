@@ -33,6 +33,13 @@ body > header {
       padding: 2px 0;
       margin-left: 10px;
     }
+
+    &[role="external"] {
+      margin-left: 0;
+      a {
+        border-bottom: none;
+      }
+    }
   }
 
   text-align: center;
@@ -42,24 +49,34 @@ body > main {
   margin: 116px 10%;
 
   ul {
-    font-size: 28px;
-    li {
-      margin-bottom: 20px;
-      display: flex;
+    &.posts {
+      font-size: 28px;
+      li {
+        margin-bottom: 20px;
+        display: flex;
 
-      span {
-        font-style: italic;
-        color: #ccc;
-        min-width: 170px;
+        span {
+          font-style: italic;
+          color: #ccc;
+          min-width: 170px;
 
-      }
-      a {
-        font-weight: bold;
-        font-family: $heading-font;
-
-        &, &:hover, &:visited, &:active {
-          border-bottom: none;
         }
+        a {
+          font-weight: bold;
+          font-family: $heading-font;
+
+          &, &:hover, &:visited, &:active {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    &.medias {
+      li {
+        margin-bottom: .5em;
+      }
+      i {
+        margin-right: 10px;
       }
     }
   }
@@ -84,6 +101,13 @@ body > main {
     p {
       line-height: 1.5em;
       margin-bottom: 1em;
+    }
+  }
+
+  section {
+    margin-bottom: 20px;
+    p {
+      margin-bottom: .5em;
     }
   }
 }

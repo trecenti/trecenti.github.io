@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
-  <ul>
+  <ul class="posts">
   {% for post in posts %}
     <li>
       <span>&nbsp;{{ post.date | date('M jS, Y')}}</span>
