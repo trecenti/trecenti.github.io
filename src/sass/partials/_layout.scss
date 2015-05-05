@@ -48,6 +48,13 @@ body > header {
 body > main {
   margin: 116px 10%;
 
+  h2[role="splash"] {
+    font-family: $base-font;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+  }
+
   ul {
     &.posts {
       font-size: 28px;
@@ -108,6 +115,40 @@ body > main {
     margin-bottom: 20px;
     p {
       margin-bottom: .5em;
+    }
+
+    &[role="resume"] {
+      h3 {
+        margin-bottom: .5em;
+      }
+
+      header {
+        display: flex;
+        margin-bottom: 20px;
+
+        div {
+          flex-grow: 1;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+
+        div[role="contact-info"] {
+          text-align: right;
+        }
+      }
+
+      section {
+        div[role="entry"] {
+          display: flex;
+          div[role="date"] {
+            min-width: 140px;
+          }
+          div[role="info"] {
+          }
+        }
+      }
     }
   }
 }

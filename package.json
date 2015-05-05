@@ -30,5 +30,8 @@
     "metalsmith-collections": "^0.6.0",
     "metalsmith-snippet": "^1.0.1",
     "marked": "^0.3.2"
+  },
+  "dependencies": {
+    "metalsmith-drafts": "0.0.1"
   }
 }
