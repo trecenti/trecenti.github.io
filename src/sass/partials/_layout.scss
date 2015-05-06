@@ -1,5 +1,5 @@
-
 body > header {
+  box-sizing: border-box;
   padding: 20px 10% 60px;
   display: flex;
   position: fixed;
@@ -18,7 +18,7 @@ body > header {
     flex-grow: 1;
     text-align: left;
 
-    font-size: 36px;
+    font-size: 1.6em;
     a, a:hover, a:visited, a:active {
       border-bottom: none;
     }
@@ -46,7 +46,8 @@ body > header {
 }
 
 body > main {
-  margin: 116px 10%;
+  margin-top: 116px;
+  padding: 0 10%;
 
   h2[role="splash"] {
     font-family: $base-font;
@@ -57,7 +58,7 @@ body > main {
 
   ul {
     &.posts {
-      font-size: 28px;
+      font-size: 1.4em;
       li {
         margin-bottom: 20px;
         display: flex;
@@ -152,3 +153,36 @@ body > main {
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  body > header {
+    &> h1 {
+      font-size: 1em;
+    }
+    nav {
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  body > header {
+    padding: 20px 6% 60px;
+  }
+  body > main {
+    font-size: .8em;
+    padding: 0 6%;
+
+    ul {
+      &.posts {
+        li {
+          display: block;
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+

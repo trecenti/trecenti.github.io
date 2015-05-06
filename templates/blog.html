@@ -3,7 +3,7 @@
   <ul class="posts">
   {% for post in posts %}
     <li>
-      <span>&nbsp;{{ post.date | date('M jS, Y')}}</span>
+      <span>{{ post.date | date('M jS, Y')}}</span>
       <a href="/{{ post.path | safe }}">{{ post.title }}</a>
     </li>
   {% endfor %}
