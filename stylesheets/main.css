@@ -270,12 +270,6 @@ body > main ul.posts li a {
   font-weight: bold;
   font-family: 'Source Sans Pro', Arial, sans-serif;
 }
-body > main ul.posts li a,
-body > main ul.posts li a:hover,
-body > main ul.posts li a:visited,
-body > main ul.posts li a:active {
-  border-bottom: none;
-}
 body > main ul.medias li {
   margin-bottom: 0.5em;
 }
@@ -350,6 +344,11 @@ body > main section[role="resume"] section div[role="entry"] div[role="date"] {
   }
   body > main ul.posts li span {
     display: block;
+  }
+}
+@media only screen and (min-width: 320px) {
+  body > main {
+    margin-top: 124px;
   }
 }
 body {
