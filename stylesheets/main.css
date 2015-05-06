@@ -178,6 +178,7 @@ hr:after {
   padding: 5px;
 }
 body > header {
+  box-sizing: border-box;
   padding: 20px 10% 60px;
   display: flex;
   position: fixed;
@@ -207,7 +208,7 @@ body > header {
 body > header h1 {
   flex-grow: 1;
   text-align: left;
-  font-size: 36px;
+  font-size: 1.6em;
 }
 body > header h1 a,
 body > header h1 a:hover,
@@ -231,7 +232,8 @@ body > header nav[role="external"] a {
   border-bottom: none;
 }
 body > main {
-  margin: 116px 10%;
+  margin-top: 116px;
+  padding: 0 10%;
 }
 body > main h2[role="splash"] {
   font-family: 'Gentium Book Basic', serif;
@@ -240,7 +242,7 @@ body > main h2[role="splash"] {
   text-align: center;
 }
 body > main ul.posts {
-  font-size: 28px;
+  font-size: 1.4em;
 }
 body > main ul.posts li {
   margin-bottom: 20px;
@@ -313,6 +315,29 @@ body > main section[role="resume"] section div[role="entry"] {
 }
 body > main section[role="resume"] section div[role="entry"] div[role="date"] {
   min-width: 140px;
+}
+@media only screen and (max-width: 600px) {
+  body > header > h1 {
+    font-size: 1em;
+  }
+  body > header nav {
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 393px) {
+  body > header {
+    padding: 20px 6% 60px;
+  }
+  body > main {
+    font-size: 0.8em;
+    padding: 0 6%;
+  }
+  body > main ul.posts li {
+    display: block;
+  }
+  body > main ul.posts li span {
+    display: block;
+  }
 }
 body {
   font-family: 'Gentium Book Basic', serif;
