@@ -1,6 +1,8 @@
 body > header {
   box-sizing: border-box;
   padding: 20px 10% 60px;
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
   display: flex;
   position: fixed;
   top: 0;
@@ -15,6 +17,7 @@ body > header {
 
 
   h1 {
+    -webkit-flex-grow: 1;
     flex-grow: 1;
     text-align: left;
 
@@ -26,6 +29,8 @@ body > header {
 
   nav {
     margin-left: 10px;
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
     display: flex;
     align-items: flex-end;
 
