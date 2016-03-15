@@ -1,6 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 @import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400italic,700,400);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 
 html,
@@ -91,6 +92,7 @@ video {
   margin: 0;
   padding: 0;
 }
+
 article,
 aside,
 details,
@@ -104,27 +106,33 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 h1,
 h2,
 h3,
@@ -132,197 +140,225 @@ h4,
 h5 {
   line-height: 1em;
 }
+
 p {
   line-height: 1.5em;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: bold;
 }
+
 h1 {
   font-size: 1.4em;
 }
+
 h2 {
   font-size: 1.2em;
 }
+
 h3,
 h4 {
   font-size: 1.1em;
 }
+
 h4 {
   font-style: italic;
   font-weight: normal;
 }
+
 h5 {
   font-size: 1em;
 }
+
 hr {
   border: 0;
   height: 1px;
   line-height: 1px;
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  background-image: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -moz-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -ms-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(0, 0, 0, 0.75), transparent);
 }
+
 hr:after {
   font-family: 'FontAwesome';
   content: '\f04d';
   margin: 0 50%;
   background: white;
-  font-size: 0.7em;
+  font-size: .7em;
   padding: 5px;
 }
+
 body > header {
   box-sizing: border-box;
   padding: 20px 10% 60px;
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
-  
   display: -webkit-flex;
   /* NEW - Chrome */
-  
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 68%, rgba(255, 255, 255, 0.7) 100%);
+  background: -moz-linear-gradient(top, white 0%, white 68%, rgba(255, 255, 255, 0.7) 100%);
   /* FF3.6+ */
-  
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(68%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0.7)));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(68%, white), color-stop(100%, rgba(255, 255, 255, 0.7)));
   /* Chrome,Safari4+ */
-  
-  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 68%, rgba(255, 255, 255, 0.7) 100%);
+  background: -webkit-linear-gradient(top, white 0%, white 68%, rgba(255, 255, 255, 0.7) 100%);
   /* Chrome10+,Safari5.1+ */
-  
-  background: -o-linear-gradient(top, #ffffff 0%, #ffffff 68%, rgba(255, 255, 255, 0.7) 100%);
+  background: -o-linear-gradient(top, white 0%, white 68%, rgba(255, 255, 255, 0.7) 100%);
   /* Opera 11.10+ */
-  
-  background: -ms-linear-gradient(top, #ffffff 0%, #ffffff 68%, rgba(255, 255, 255, 0.7) 100%);
+  background: -ms-linear-gradient(top, white 0%, white 68%, rgba(255, 255, 255, 0.7) 100%);
   /* IE10+ */
-  
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 68%, rgba(255, 255, 255, 0.7) 100%);
+  background: linear-gradient(to bottom, white 0%, white 68%, rgba(255, 255, 255, 0.7) 100%);
   /* W3C */
-  
   text-align: center;
 }
+
 body > header h1 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   text-align: left;
   font-size: 1.6em;
 }
+
 body > header h1 a,
 body > header h1 a:hover,
 body > header h1 a:visited,
 body > header h1 a:active {
   border-bottom: none;
 }
+
 body > header nav {
   margin-left: 10px;
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
-  
   display: -webkit-flex;
   /* NEW - Chrome */
-  
   display: flex;
   align-items: flex-end;
 }
+
 body > header nav a {
   padding: 2px 0;
   margin-left: 10px;
 }
+
 body > header nav[role="external"] {
   margin-left: 0;
 }
+
 body > header nav[role="external"] a {
   border-bottom: none;
 }
+
 body > main {
   margin-top: 116px;
   padding: 0 10%;
 }
+
 body > main h2[role="splash"] {
-  font-family: 'Gentium Book Basic', serif;
+  font-family: "Gentium Book Basic", serif;
   font-weight: normal;
   font-style: italic;
   text-align: center;
 }
+
 body > main ul.posts {
   font-size: 1.4em;
 }
+
 body > main ul.posts li {
   margin-bottom: 20px;
   display: flex;
 }
+
 body > main ul.posts li span {
   font-style: italic;
   color: #ccc;
   min-width: 170px;
 }
+
 body > main ul.posts li a {
   font-weight: bold;
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: "Source Sans Pro", Arial, sans-serif;
 }
+
 body > main ul.medias li {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
+
 body > main ul.medias i {
   margin-right: 10px;
 }
+
 body > main article header {
   margin-bottom: 2em;
 }
+
 body > main article header h1,
 body > main article header h2 {
   line-height: 1.5em;
   text-align: center;
 }
+
 body > main article header h2 {
-  font-family: 'Gentium Book Basic', serif;
+  font-family: "Gentium Book Basic", serif;
   font-style: italic;
   font-weight: normal;
   font-size: 1em;
   color: #777;
 }
+
 body > main article p {
   line-height: 1.5em;
   margin-bottom: 1em;
 }
+
 body > main section {
   margin-bottom: 20px;
 }
+
 body > main section p {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
+
 body > main section[role="resume"] h3 {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
+
 body > main section[role="resume"] header {
   display: flex;
   margin-bottom: 20px;
 }
+
 body > main section[role="resume"] header div {
   flex-grow: 1;
 }
+
 body > main section[role="resume"] header p {
   margin-bottom: 0;
 }
+
 body > main section[role="resume"] header div[role="contact-info"] {
   text-align: right;
 }
+
 body > main section[role="resume"] section div[role="entry"] {
   display: flex;
 }
+
 body > main section[role="resume"] section div[role="entry"] div[role="date"] {
   min-width: 140px;
 }
+
 @media only screen and (max-width: 600px) {
   body > header > h1 {
     font-size: 1em;
@@ -331,12 +367,13 @@ body > main section[role="resume"] section div[role="entry"] div[role="date"] {
     font-size: 0.7em;
   }
 }
+
 @media only screen and (max-width: 393px) {
   body > header {
     padding: 20px 6% 60px;
   }
   body > main {
-    font-size: 0.8em;
+    font-size: .8em;
     padding: 0 6%;
   }
   body > main ul.posts li {
@@ -346,21 +383,25 @@ body > main section[role="resume"] section div[role="entry"] div[role="date"] {
     display: block;
   }
 }
+
 @media only screen and (min-width: 320px) {
   body > main {
     margin-top: 124px;
   }
 }
+
 body {
-  font-family: 'Gentium Book Basic', serif;
+  font-family: "Gentium Book Basic", serif;
   color: rgba(0, 0, 0, 0.8);
   font-size: 22px;
 }
+
 a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid #ccc;
 }
+
 a:hover,
 a:active {
   color: #01A2A6;
