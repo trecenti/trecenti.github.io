@@ -7,8 +7,7 @@
     "build": "node scripts/build.js",
     "start": "node scripts/serve.js",
     "watch": "node scripts/watch.js",
-    "publish": "node scripts/publish.js",
-    "buildAndpublish": "npm run build && npm run publish"
+    "publish": "npm run build && node scripts/publish.js"
   },
   "repository": {
     "type": "git",
