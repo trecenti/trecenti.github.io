@@ -195,7 +195,7 @@ hr:after {
   padding: 5px;
 }
 
-body > header {
+body> header {
   box-sizing: border-box;
   padding: 20px 10% 60px;
   display: -ms-flexbox;
@@ -222,21 +222,21 @@ body > header {
   text-align: center;
 }
 
-body > header h1 {
+body> header h1 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   text-align: left;
   font-size: 1.6em;
 }
 
-body > header h1 a,
-body > header h1 a:hover,
-body > header h1 a:visited,
-body > header h1 a:active {
+body> header h1 a,
+body> header h1 a:hover,
+body> header h1 a:visited,
+body> header h1 a:active {
   border-bottom: none;
 }
 
-body > header nav {
+body> header nav {
   margin-left: 10px;
   display: -ms-flexbox;
   /* TWEENER - IE 10 */
@@ -246,70 +246,70 @@ body > header nav {
   align-items: flex-end;
 }
 
-body > header nav a {
+body> header nav a {
   padding: 2px 0;
   margin-left: 10px;
 }
 
-body > header nav[role="external"] {
+body> header nav[role="external"] {
   margin-left: 0;
 }
 
-body > header nav[role="external"] a {
+body> header nav[role="external"] a {
   border-bottom: none;
 }
 
-body > main {
+body> main {
   margin-top: 116px;
   padding: 0 10%;
 }
 
-body > main h2[role="splash"] {
+body> main h2[role="splash"] {
   font-family: "Gentium Book Basic", serif;
   font-weight: normal;
   font-style: italic;
   text-align: center;
 }
 
-body > main ul.posts {
+body> main ul.posts {
   font-size: 1.4em;
 }
 
-body > main ul.posts li {
+body> main ul.posts li {
   margin-bottom: 20px;
   display: flex;
 }
 
-body > main ul.posts li span {
+body> main ul.posts li span {
   font-style: italic;
   color: #ccc;
   min-width: 170px;
 }
 
-body > main ul.posts li a {
+body> main ul.posts li a {
   font-weight: bold;
   font-family: "Source Sans Pro", Arial, sans-serif;
 }
 
-body > main ul.medias li {
+body> main ul.medias li {
   margin-bottom: .5em;
 }
 
-body > main ul.medias i {
+body> main ul.medias i {
   margin-right: 10px;
 }
 
-body > main article header {
+body> main article header {
   margin-bottom: 2em;
 }
 
-body > main article header h1,
-body > main article header h2 {
+body> main article header h1,
+body> main article header h2 {
   line-height: 1.5em;
   text-align: center;
 }
 
-body > main article header h2 {
+body> main article header h2 {
   font-family: "Gentium Book Basic", serif;
   font-style: italic;
   font-weight: normal;
@@ -317,75 +317,75 @@ body > main article header h2 {
   color: #777;
 }
 
-body > main article p {
+body> main article p {
   line-height: 1.5em;
   margin-bottom: 1em;
 }
 
-body > main section {
+body> main section {
   margin-bottom: 20px;
 }
 
-body > main section p {
+body> main section p {
   margin-bottom: .5em;
 }
 
-body > main section[role="resume"] h3 {
+body> main section[role="resume"] h3 {
   margin-bottom: .5em;
 }
 
-body > main section[role="resume"] header {
+body> main section[role="resume"] header {
   display: flex;
   margin-bottom: 20px;
 }
 
-body > main section[role="resume"] header div {
+body> main section[role="resume"] header div {
   flex-grow: 1;
 }
 
-body > main section[role="resume"] header p {
+body> main section[role="resume"] header p {
   margin-bottom: 0;
 }
 
-body > main section[role="resume"] header div[role="contact-info"] {
+body> main section[role="resume"] header div[role="contact-info"] {
   text-align: right;
 }
 
-body > main section[role="resume"] section div[role="entry"] {
+body> main section[role="resume"] section div[role="entry"] {
   display: flex;
 }
 
-body > main section[role="resume"] section div[role="entry"] div[role="date"] {
+body> main section[role="resume"] section div[role="entry"] div[role="date"] {
   min-width: 140px;
 }
 
 @media only screen and (max-width: 600px) {
-  body > header > h1 {
+  body> header> h1 {
     font-size: 1em;
   }
-  body > header nav {
+  body> header nav {
     font-size: 0.7em;
   }
 }
 
 @media only screen and (max-width: 393px) {
-  body > header {
+  body> header {
     padding: 20px 6% 60px;
   }
-  body > main {
+  body> main {
     font-size: .8em;
     padding: 0 6%;
   }
-  body > main ul.posts li {
+  body> main ul.posts li {
     display: block;
   }
-  body > main ul.posts li span {
+  body> main ul.posts li span {
     display: block;
   }
 }
 
 @media only screen and (min-width: 320px) {
-  body > main {
+  body> main {
     margin-top: 124px;
   }
 }
