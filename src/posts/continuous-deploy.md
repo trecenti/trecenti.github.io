@@ -2,7 +2,7 @@
 title: Continuous deploy, achievement unlocked
 date: 2014-05-05
 collection: posts
-template: post.html
+layout: post.html
 ---
 I've been working with the Rackspace Cloud Control Panel team for a while now and one of the things that I've learned and I'm proud
 to have contributed to is how we shaped the continuous deployment pipeline for the project. The whole system may be simple if you overlook it,
