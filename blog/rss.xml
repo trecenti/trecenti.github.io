@@ -1,40 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Trecenti]]></title><description><![CDATA[Bruno Trecenti]]></description><link>https://trecenti.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 21 Jul 2016 21:12:36 GMT</lastBuildDate><atom:link href="https://trecenti.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Bruno Trecenti]]></author><item><title><![CDATA[Continuous deploy, achievement unlocked]]></title><description><![CDATA[<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bruno Trecenti - Continuous deploy, achievement unlocked</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="/stylesheets/main.css" rel="stylesheet" type="text/css" />
-    <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-50847949-1', 'brunotrecenti.com');
-ga('send', 'pageview');
-    </script>
-  </head>
-  <body>
-    <header>
-      <h1><a href="/">Bruno Trecenti</a></h1>
-      <nav role="internal">
-        <a href="/blog">Blog</a>
-        <a href="/about-me">About Me</a>
-      </nav>
-      <nav role="external">
-        <a href="https://github.com/trecenti" target="_blank"><i class="fa fa-github-alt"></i></a>
-        <a href="https://twitter.com/brunotrecenti" target="_blank"><i class="fa fa-twitter"></i></a>
-      </nav>
-    </header>
-    <main>
-    <article>
-      <header>
-        <h1>Continuous deploy, achievement unlocked</h1>
-        <h2>May 5th, 2014</h2>
-      </header>
-      <p>I&#39;ve been working with the Rackspace Cloud Control Panel team for a while now and one of the things that I&#39;ve learned and I&#39;m proud
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Bruno Trecenti]]></title><description><![CDATA[Bruno Trecenti]]></description><link>https://trecenti.github.io</link><generator>metalsmith-feed</generator><lastBuildDate>Thu, 21 Jul 2016 21:17:33 GMT</lastBuildDate><atom:link href="https://trecenti.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/><author><![CDATA[Bruno Trecenti]]></author><item><title><![CDATA[Continuous deploy, achievement unlocked]]></title><description><![CDATA[<p>I&#39;ve been working with the Rackspace Cloud Control Panel team for a while now and one of the things that I&#39;ve learned and I&#39;m proud
 to have contributed to is how we shaped the continuous deployment pipeline for the project. The whole system may be simple if you overlook it,
 but in fact is quite complex under the hood, and after all it gives me a exhilarating feeling of achievement on every single deploy.</p>
 <p>In this post I&#39;ll try to share how it works and the details of each step. To start off, there are several steps before any code gets to production,
@@ -69,10 +34,4 @@ to provide the best experience for the end user and the developers.</p>
 <p>Concluding, this process established for this project is for me the perfect example of one item in the agile manifesto &quot;People and interactions over
 process and tools&quot;, we managed to keep our interactions and the team (even with a bot being part of it) as the most valuable thing
 while using a process and tools to help us achieve better results.</p>
-
-      <hr/>
-    </article>
-    </main>
-  </body>
-</html>
 ]]></description><link>https://trecenti.github.io/blog/2014/05/continuous-deploy-achievement-unlocked</link><guid isPermaLink="true">https://trecenti.github.io/blog/2014/05/continuous-deploy-achievement-unlocked</guid><dc:creator><![CDATA[Bruno Trecenti]]></dc:creator><pubDate>Mon, 05 May 2014 00:00:00 GMT</pubDate></item></channel></rss>
