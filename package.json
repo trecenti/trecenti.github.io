@@ -1,7 +1,7 @@
 {
   "name": "trecenti.github.io",
   "version": "0.0.0",
-  "description": "brunotrecenti.com website",
+  "description": "trecenti.github.io website",
   "main": "index.js",
   "scripts": {
     "build": "node scripts/build.js",
